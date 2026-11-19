@@ -391,3 +391,41 @@ code {
   display: inline-block; margin-top: 10px; padding: 6px 12px; border-radius: 8px;
   background: color-mix(in srgb, var(--accent) 16%, transparent); color: var(--text); font-size: .88rem;
 }
+
+/* ---------- Hero photo background ---------- */
+.hero {
+  background:
+    linear-gradient(120deg, rgba(11,92,86,.9), rgba(15,118,110,.72)),
+    url("images/hero.jpg") center / cover no-repeat;
+}
+
+/* ---------- Photo galleries ---------- */
+.gallery {
+  display: grid; gap: 18px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+.gallery-office { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.gallery-item {
+  position: relative; padding: 0; border: 1px solid var(--border); border-radius: var(--radius);
+  overflow: hidden; background: var(--card); cursor: zoom-in; text-align: left;
+  animation: rise .4s ease both; font: inherit; color: var(--text);
+}
+.gallery-item img {
+  width: 100%; height: 200px; object-fit: cover; display: block;
+  transition: transform .35s ease;
+}
+.gallery-item:hover img { transform: scale(1.04); }
+.gallery-item:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.gallery-caption {
+  display: block; padding: 10px 14px; font-size: .9rem; color: var(--muted);
+}
+
+.modal-img {
+  display: block; width: 100%; max-height: 70vh; object-fit: contain; background: #000;
+}
+.modal-body p#modalCaption { color: var(--text); font-weight: 600; margin: 0 0 14px; }
+
+@media (max-width: 760px) {
+  .gallery, .gallery-office { grid-template-columns: 1fr; }
+  .gallery-item img { height: 220px; }
+}
