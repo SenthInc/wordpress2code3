@@ -385,3 +385,9 @@ code {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* ---------- Placeholder note ---------- */
+.placeholder-note {
+  display: inline-block; margin-top: 10px; padding: 6px 12px; border-radius: 8px;
+  background: color-mix(in srgb, var(--accent) 16%, transparent); color: var(--text); font-size: .88rem;
+}

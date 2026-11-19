@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jeyam Real Estate - buy, sell and build property in Jaffna, Sri Lanka. Land, houses, apartments and custom home construction.">
+  <meta name="description" content="Jeyam Real Estate - portfolio of land development, custom homes and property projects in Jaffna, Sri Lanka.">
   <meta property="og:title" content="Jeyam Real Estate | Jaffna">
-  <meta property="og:description" content="Land, houses and custom home construction in Jaffna, Sri Lanka.">
+  <meta property="og:description" content="Our portfolio of land development, custom homes and property projects in Jaffna.">
   <meta property="og:type" content="website">
   <title>Jeyam Real Estate | Jaffna</title>
   <link rel="stylesheet" href="styles.css">
@@ -23,7 +23,7 @@
         <span></span><span></span><span></span>
       </button>
       <nav id="mainNav" class="main-nav">
-        <a href="#listings">Properties</a>
+        <a href="#portfolio">Portfolio</a>
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#location">Visit us</a>
@@ -38,32 +38,12 @@
     <section class="hero" id="top">
       <div class="container hero-inner">
         <p class="eyebrow">Jaffna, Sri Lanka &middot; Since 2019</p>
-        <h1>Find your land, home or dream build in Jaffna</h1>
-        <p class="lead">Buying, selling and building property across Jaffna and surrounding areas. Talk to us on WhatsApp for a quick, friendly answer.</p>
+        <h1>Building and developing property in Jaffna</h1>
+        <p class="lead">A look at our land development, custom home and property projects across Jaffna and surrounding areas.</p>
         <div class="hero-actions">
-          <a href="#listings" class="btn btn-primary">Browse properties</a>
+          <a href="#portfolio" class="btn btn-primary">View our portfolio</a>
           <a id="heroWhatsApp" href="#" class="btn btn-ghost" target="_blank" rel="noopener">Chat on WhatsApp</a>
         </div>
-
-        <form class="hero-search" id="quickSearch" role="search">
-          <label class="sr-only" for="qType">Property type</label>
-          <select id="qType">
-            <option value="all">All types</option>
-            <option value="land">Land</option>
-            <option value="house">House</option>
-            <option value="apartment">Apartment</option>
-            <option value="commercial">Commercial</option>
-          </select>
-          <label class="sr-only" for="qMax">Maximum budget</label>
-          <select id="qMax">
-            <option value="">Any budget</option>
-            <option value="10000000">Up to LKR 10M</option>
-            <option value="25000000">Up to LKR 25M</option>
-            <option value="50000000">Up to LKR 50M</option>
-            <option value="100000000">Up to LKR 100M</option>
-          </select>
-          <button type="submit" class="btn btn-primary">Search</button>
-        </form>
       </div>
     </section>
 
@@ -72,35 +52,30 @@
       <div class="container stats-grid">
         <div class="stat"><strong data-count="2019">0</strong><span>Established</span></div>
         <div class="stat"><strong data-count="7">0</strong><span>Days a week open</span></div>
-        <div class="stat"><strong data-count="4">0</strong><span>Core services</span></div>
+        <div class="stat"><strong data-count="3">0</strong><span>Core services</span></div>
         <div class="stat"><strong>Jaffna</strong><span>Local expertise</span></div>
       </div>
     </section>
 
-    <!-- LISTINGS -->
-    <section class="section" id="listings">
+    <!-- PORTFOLIO -->
+    <section class="section" id="portfolio">
       <div class="container">
         <div class="section-head">
-          <h2>Featured properties</h2>
-          <p>Sample listings to show the layout. Replace with live listings in <code>script.js</code>.</p>
+          <h2>Our portfolio</h2>
+          <p>Selected projects by category.</p>
+          <p class="placeholder-note">Placeholder projects: replace these with your real work in <code>script.js</code>, then delete this note.</p>
         </div>
 
-        <div class="filters" role="group" aria-label="Filter properties">
+        <div class="filters" role="group" aria-label="Filter projects">
           <button class="chip is-active" data-filter="all">All</button>
-          <button class="chip" data-filter="land">Land</button>
-          <button class="chip" data-filter="house">Houses</button>
-          <button class="chip" data-filter="apartment">Apartments</button>
+          <button class="chip" data-filter="land">Land development</button>
+          <button class="chip" data-filter="home">Custom homes</button>
           <button class="chip" data-filter="commercial">Commercial</button>
-          <select id="sortBy" class="sort" aria-label="Sort properties">
-            <option value="default">Sort: Featured</option>
-            <option value="price-asc">Price: low to high</option>
-            <option value="price-desc">Price: high to low</option>
-          </select>
         </div>
 
         <p class="result-count" id="resultCount" aria-live="polite"></p>
         <div class="listing-grid" id="listingGrid"></div>
-        <p class="empty" id="emptyState" hidden>No properties match these filters. Try another type or budget.</p>
+        <p class="empty" id="emptyState" hidden>No projects in this category yet.</p>
       </div>
     </section>
 
@@ -109,28 +84,23 @@
       <div class="container">
         <div class="section-head">
           <h2>What we do</h2>
-          <p>One team for the whole property journey.</p>
+          <p>From first plot to finished home.</p>
         </div>
         <div class="service-grid">
           <article class="service-card">
-            <div class="icon" aria-hidden="true">&#127969;</div>
-            <h3>Buying &amp; selling</h3>
-            <p>Houses, apartments, land and commercial property. We help you find the right fit and close the deal smoothly.</p>
-          </article>
-          <article class="service-card">
             <div class="icon" aria-hidden="true">&#127757;</div>
             <h3>Land development</h3>
-            <p>Plot sales and land development projects across Jaffna and nearby areas.</p>
+            <p>Planning and developing land projects across Jaffna and nearby areas.</p>
           </article>
           <article class="service-card">
-            <div class="icon" aria-hidden="true">&#128296;</div>
+            <div class="icon" aria-hidden="true">&#127968;</div>
             <h3>Custom home construction</h3>
             <p>From plan to handover. Build the home you want on land you choose.</p>
           </article>
           <article class="service-card">
-            <div class="icon" aria-hidden="true">&#129309;</div>
-            <h3>Advice &amp; valuation</h3>
-            <p>Honest guidance on prices, documents and the right time to buy or sell.</p>
+            <div class="icon" aria-hidden="true">&#127978;</div>
+            <h3>Commercial property</h3>
+            <p>Shops, offices and showrooms designed for local businesses.</p>
           </article>
         </div>
       </div>
@@ -141,11 +111,11 @@
       <div class="container about-grid">
         <div>
           <h2>About Jeyam Real Estate</h2>
-          <p>Jeyam Real Estate has been helping families and investors in Jaffna since 2019. We handle buying and selling of land and houses, land development projects, and custom home construction.</p>
-          <p>Our aim is simple: clear information, fair advice and a process you can trust from the first call to the final key.</p>
+          <p>Jeyam Real Estate has been working in Jaffna since 2019, with projects in land development, custom home construction and commercial property.</p>
+          <p>We keep communication clear and the process straightforward, from the first meeting to the final handover.</p>
           <ul class="checklist">
-            <li>Local knowledge of Jaffna neighbourhoods</li>
-            <li>Straightforward pricing, no surprises</li>
+            <li>Local knowledge of Jaffna</li>
+            <li>Clear planning and honest timelines</li>
             <li>Available 7 days a week</li>
           </ul>
         </div>
@@ -184,7 +154,7 @@
       <div class="container contact-grid">
         <div>
           <h2>Get in touch</h2>
-          <p>Tell us what you are looking for and we will get back to you.</p>
+          <p>Ask about a project, or tell us what you have in mind.</p>
           <ul class="contact-list">
             <li><span class="label">Phone / WhatsApp</span>
               <a id="phoneLink" href="tel:+94778147389">+94 77 814 7389</a>
@@ -216,10 +186,9 @@
           <div class="field">
             <label for="cInterest">I am interested in</label>
             <select id="cInterest" name="interest">
-              <option>Buying</option>
-              <option>Selling</option>
-              <option>Land</option>
+              <option>Land development</option>
               <option>Custom home construction</option>
+              <option>Commercial property</option>
               <option>Other</option>
             </select>
           </div>
@@ -228,24 +197,24 @@
             <textarea id="cMessage" name="message" rows="4" required></textarea>
             <p class="error" data-error-for="cMessage"></p>
           </div>
-          <button type="submit" class="btn btn-primary btn-block">Send enquiry</button>
+          <button type="submit" class="btn btn-primary btn-block">Send message</button>
           <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
         </form>
       </div>
     </section>
   </main>
 
-  <!-- LIGHTBOX -->
+  <!-- PROJECT DETAIL MODAL -->
   <div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-box">
       <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
       <div class="modal-visual" id="modalVisual"></div>
       <div class="modal-body">
         <h3 id="modalTitle"></h3>
-        <p class="modal-price" id="modalPrice"></p>
+        <p class="modal-price" id="modalMeta"></p>
         <p id="modalDesc"></p>
         <ul class="modal-specs" id="modalSpecs"></ul>
-        <a class="btn btn-primary btn-block" id="modalWhatsApp" href="#" target="_blank" rel="noopener">Enquire on WhatsApp</a>
+        <a class="btn btn-primary btn-block" id="modalWhatsApp" href="#" target="_blank" rel="noopener">Ask about this project</a>
       </div>
     </div>
   </div>
