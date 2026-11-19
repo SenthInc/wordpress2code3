@@ -429,3 +429,6 @@ code {
   .gallery, .gallery-office { grid-template-columns: 1fr; }
   .gallery-item img { height: 220px; }
 }
+
+/* ---------- Logo ---------- */
+.logo-img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
