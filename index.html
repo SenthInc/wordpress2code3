@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jeyam Real Estate - buy, sell and build property in Jaffna, Sri Lanka. Land, houses, apartments and custom home construction.">
+  <meta property="og:title" content="Jeyam Real Estate | Jaffna">
+  <meta property="og:description" content="Land, houses and custom home construction in Jaffna, Sri Lanka.">
+  <meta property="og:type" content="website">
+  <title>Jeyam Real Estate | Jaffna</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a href="#top" class="logo" aria-label="Jeyam Real Estate home">
+        <span class="logo-mark">J</span>
+        <span>Jeyam <small>Real Estate</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="mainNav" class="main-nav">
+        <a href="#listings">Properties</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#location">Visit us</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">Dark mode</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <p class="eyebrow">Jaffna, Sri Lanka &middot; Since 2019</p>
+        <h1>Find your land, home or dream build in Jaffna</h1>
+        <p class="lead">Buying, selling and building property across Jaffna and surrounding areas. Talk to us on WhatsApp for a quick, friendly answer.</p>
+        <div class="hero-actions">
+          <a href="#listings" class="btn btn-primary">Browse properties</a>
+          <a id="heroWhatsApp" href="#" class="btn btn-ghost" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div>
+
+        <form class="hero-search" id="quickSearch" role="search">
+          <label class="sr-only" for="qType">Property type</label>
+          <select id="qType">
+            <option value="all">All types</option>
+            <option value="land">Land</option>
+            <option value="house">House</option>
+            <option value="apartment">Apartment</option>
+            <option value="commercial">Commercial</option>
+          </select>
+          <label class="sr-only" for="qMax">Maximum budget</label>
+          <select id="qMax">
+            <option value="">Any budget</option>
+            <option value="10000000">Up to LKR 10M</option>
+            <option value="25000000">Up to LKR 25M</option>
+            <option value="50000000">Up to LKR 50M</option>
+            <option value="100000000">Up to LKR 100M</option>
+          </select>
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats" aria-label="Highlights">
+      <div class="container stats-grid">
+        <div class="stat"><strong data-count="2019">0</strong><span>Established</span></div>
+        <div class="stat"><strong data-count="7">0</strong><span>Days a week open</span></div>
+        <div class="stat"><strong data-count="4">0</strong><span>Core services</span></div>
+        <div class="stat"><strong>Jaffna</strong><span>Local expertise</span></div>
+      </div>
+    </section>
+
+    <!-- LISTINGS -->
+    <section class="section" id="listings">
+      <div class="container">
+        <div class="section-head">
+          <h2>Featured properties</h2>
+          <p>Sample listings to show the layout. Replace with live listings in <code>script.js</code>.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter properties">
+          <button class="chip is-active" data-filter="all">All</button>
+          <button class="chip" data-filter="land">Land</button>
+          <button class="chip" data-filter="house">Houses</button>
+          <button class="chip" data-filter="apartment">Apartments</button>
+          <button class="chip" data-filter="commercial">Commercial</button>
+          <select id="sortBy" class="sort" aria-label="Sort properties">
+            <option value="default">Sort: Featured</option>
+            <option value="price-asc">Price: low to high</option>
+            <option value="price-desc">Price: high to low</option>
+          </select>
+        </div>
+
+        <p class="result-count" id="resultCount" aria-live="polite"></p>
+        <div class="listing-grid" id="listingGrid"></div>
+        <p class="empty" id="emptyState" hidden>No properties match these filters. Try another type or budget.</p>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section alt" id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2>What we do</h2>
+          <p>One team for the whole property journey.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="icon" aria-hidden="true">&#127969;</div>
+            <h3>Buying &amp; selling</h3>
+            <p>Houses, apartments, land and commercial property. We help you find the right fit and close the deal smoothly.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon" aria-hidden="true">&#127757;</div>
+            <h3>Land development</h3>
+            <p>Plot sales and land development projects across Jaffna and nearby areas.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon" aria-hidden="true">&#128296;</div>
+            <h3>Custom home construction</h3>
+            <p>From plan to handover. Build the home you want on land you choose.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon" aria-hidden="true">&#129309;</div>
+            <h3>Advice &amp; valuation</h3>
+            <p>Honest guidance on prices, documents and the right time to buy or sell.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div>
+          <h2>About Jeyam Real Estate</h2>
+          <p>Jeyam Real Estate has been helping families and investors in Jaffna since 2019. We handle buying and selling of land and houses, land development projects, and custom home construction.</p>
+          <p>Our aim is simple: clear information, fair advice and a process you can trust from the first call to the final key.</p>
+          <ul class="checklist">
+            <li>Local knowledge of Jaffna neighbourhoods</li>
+            <li>Straightforward pricing, no surprises</li>
+            <li>Available 7 days a week</li>
+          </ul>
+        </div>
+        <div class="about-card">
+          <h3>Quick facts</h3>
+          <dl>
+            <dt>Location</dt><dd>151/4 Raja St, Jaffna 40170</dd>
+            <dt>Hours</dt><dd>Mon &ndash; Sun, 8:00 AM &ndash; 6:00 PM</dd>
+            <dt>Website</dt><dd><a href="https://jeyam.lk">jeyam.lk</a></dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section class="section alt" id="location">
+      <div class="container">
+        <div class="section-head">
+          <h2>Visit our office</h2>
+          <p>151/4 Raja St, Jaffna 40170, Sri Lanka</p>
+        </div>
+        <div class="map-wrap">
+          <iframe
+            title="Map showing Jeyam Real Estate, Jaffna"
+            src="https://maps.google.com/maps?q=Jeyam%20Real%20Estate%20Jaffna&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="directions">
+          <a class="btn btn-primary" id="directionsLink" href="https://www.google.com/maps/search/?api=1&amp;query=Jeyam+Real+Estate+Jaffna" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <h2>Get in touch</h2>
+          <p>Tell us what you are looking for and we will get back to you.</p>
+          <ul class="contact-list">
+            <li><span class="label">Phone / WhatsApp</span>
+              <a id="phoneLink" href="tel:+94778147389">+94 77 814 7389</a>
+              <span class="sep">/</span>
+              <a id="phoneLink2" href="tel:+94779865457">+94 77 986 5457</a>
+            </li>
+            <li><span class="label">Address</span> 151/4 Raja St, Jaffna 40170</li>
+            <li><span class="label">Hours</span> Mon &ndash; Sun, 8:00 AM &ndash; 6:00 PM</li>
+          </ul>
+
+          <div class="social" aria-label="Social media">
+            <a href="https://www.facebook.com/p/Jeyam-Real-Estate-100046658263773/" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+            <a href="https://www.tiktok.com/@jeyamrealestate" target="_blank" rel="noopener" aria-label="TikTok">TikTok</a>
+            <a id="waSocial" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="cName">Full name</label>
+            <input id="cName" name="name" type="text" autocomplete="name" required>
+            <p class="error" data-error-for="cName"></p>
+          </div>
+          <div class="field">
+            <label for="cPhone">Phone / WhatsApp</label>
+            <input id="cPhone" name="phone" type="tel" autocomplete="tel" placeholder="+94 ..." required>
+            <p class="error" data-error-for="cPhone"></p>
+          </div>
+          <div class="field">
+            <label for="cInterest">I am interested in</label>
+            <select id="cInterest" name="interest">
+              <option>Buying</option>
+              <option>Selling</option>
+              <option>Land</option>
+              <option>Custom home construction</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cMessage">Message</label>
+            <textarea id="cMessage" name="message" rows="4" required></textarea>
+            <p class="error" data-error-for="cMessage"></p>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send enquiry</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+      <div class="modal-visual" id="modalVisual"></div>
+      <div class="modal-body">
+        <h3 id="modalTitle"></h3>
+        <p class="modal-price" id="modalPrice"></p>
+        <p id="modalDesc"></p>
+        <ul class="modal-specs" id="modalSpecs"></ul>
+        <a class="btn btn-primary btn-block" id="modalWhatsApp" href="#" target="_blank" rel="noopener">Enquire on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Jeyam Real Estate, Jaffna. All rights reserved.</p>
+      <p><a href="#top">Back to top</a></p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" id="floatWhatsApp" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
