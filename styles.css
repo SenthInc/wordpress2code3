@@ -432,3 +432,7 @@ code {
 
 /* ---------- Logo ---------- */
 .logo-img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+
+/* ---------- Banner ---------- */
+.banner { padding: 40px 0 0; }
+.banner img { width: 100%; height: auto; border-radius: var(--radius); box-shadow: var(--shadow); display: block; }
