@@ -554,3 +554,15 @@ html[lang="ta"] h1, html[lang="ta"] h2, html[lang="ta"] h3 { line-height: 1.35; 
   .nav-right { order: 2; }
   .main-nav { order: 3; }
 }
+
+/* ---------- Social brand logos ---------- */
+.s-icon {
+  width: 18px; height: 18px; flex-shrink: 0; display: inline-block;
+  background-color: currentColor;
+  -webkit-mask: var(--icon) center / contain no-repeat;
+          mask: var(--icon) center / contain no-repeat;
+}
+.social-chip .s-icon { background-color: #fff; }
+.social-row-left .social-chip .s-icon { background-color: var(--c); }
+.social-chip .s-icon { transition: transform .2s ease; }
+.social-chip:hover .s-icon { transform: scale(1.12); }
