@@ -582,3 +582,24 @@ html[lang="ta"] h1, html[lang="ta"] h2, html[lang="ta"] h3 { line-height: 1.35; 
 /* ---------- Photo gaps between sections ---------- */
 .gap-banner { padding: 40px 0; }
 .gap-banner img { width: 100%; height: auto; border-radius: var(--radius); box-shadow: var(--shadow); display: block; }
+
+/* ---------- Facebook pages section (Facebook brand blue) ---------- */
+.fb-section {
+  background: linear-gradient(135deg, #1877f2 0%, #0b5bd3 100%);
+  color: #fff; padding: 64px 0;
+}
+.fb-head h2 { color: #fff; }
+.fb-head p { color: rgba(255,255,255,.9); }
+.fb-grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.fb-card {
+  display: flex; flex-direction: column; gap: 10px; padding: 24px; text-decoration: none; color: #fff;
+  background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.35); border-radius: var(--radius);
+  transition: transform .15s ease, background .2s ease;
+}
+.fb-card:hover { transform: translateY(-3px); background: rgba(255,255,255,.22); }
+.fb-card h3 { margin: 4px 0 0; font-size: 1.2rem; }
+.fb-logo { width: 32px; height: 32px; filter: brightness(0) invert(1); }
+.fb-visit {
+  align-self: flex-start; margin-top: 6px; padding: 8px 16px; border-radius: 999px;
+  background: #fff; color: #0b5bd3; font-weight: 700; font-size: .92rem;
+}
