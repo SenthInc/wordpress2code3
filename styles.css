@@ -618,3 +618,15 @@ html[lang="ta"] h1, html[lang="ta"] h2, html[lang="ta"] h3 { line-height: 1.35; 
   background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.28);
   border-radius: 22px; padding: 22px; box-shadow: 0 12px 40px rgba(0,0,0,.18);
 }
+
+/* ---------- Top social box: amber/gold (separate from the Facebook section) ---------- */
+.social-box {
+  background: linear-gradient(135deg, #f59e0b 0%, #b45309 100%);
+  border: 1px solid rgba(255,255,255,.35);
+  box-shadow: 0 10px 30px rgba(180,83,9,.35);
+}
+.social-box .social-label { color: #fff; }
+.social-box .social-chip {
+  background: rgba(0,0,0,.28); border-color: rgba(255,255,255,.4); color: #fff;
+}
+.social-box .social-chip:hover { background: rgba(0,0,0,.42); }
