@@ -566,3 +566,15 @@ html[lang="ta"] h1, html[lang="ta"] h2, html[lang="ta"] h3 { line-height: 1.35; 
 .social-row-left .social-chip .s-icon { background-color: var(--c); }
 .social-chip .s-icon { transition: transform .2s ease; }
 .social-chip:hover .s-icon { transform: scale(1.12); }
+
+/* ---------- Fix: stop call cards overlapping hero and stats ---------- */
+.call-strip { margin-top: 0; padding: 36px 0 8px; position: relative; z-index: 1; }
+.stats { margin-top: 0; padding-top: 28px; }
+@media (max-width: 900px) { .call-strip { margin-top: 0; padding-top: 28px; } }
+
+/* ---------- Hero uses the aerial photo (no printed text, so no clashing phone numbers) ---------- */
+.hero {
+  background:
+    linear-gradient(120deg, rgba(11,92,86,.9), rgba(15,118,110,.75)),
+    url("images/aerial.jpg") center / cover no-repeat;
+}
