@@ -578,3 +578,7 @@ html[lang="ta"] h1, html[lang="ta"] h2, html[lang="ta"] h3 { line-height: 1.35; 
     linear-gradient(120deg, rgba(11,92,86,.9), rgba(15,118,110,.75)),
     url("images/aerial.jpg") center / cover no-repeat;
 }
+
+/* ---------- Photo gaps between sections ---------- */
+.gap-banner { padding: 40px 0; }
+.gap-banner img { width: 100%; height: auto; border-radius: var(--radius); box-shadow: var(--shadow); display: block; }
