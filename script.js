@@ -11,7 +11,7 @@
   const T = {
     en: {
       skip: "Skip to content",
-      fb_title: "Our Facebook pages", fb_sub: "Follow our updates on Facebook.", fb_visit: "Visit page",
+      fb_title: "Our other Facebook pages", fb_sub: "Follow our other pages for updates.", fb_visit: "Visit page", social_label: "Follow us",
       companySub: "Real Estate (Pvt) Ltd",
       nav_projects: "Projects", nav_services: "Services", nav_team: "Contact us",
       nav_office: "Our office", nav_about: "About", nav_faq: "FAQ", nav_visit: "Visit us",
@@ -72,7 +72,7 @@
     },
     ta: {
       skip: "ஹார்வுக்கு செல்லவும்",
-      fb_title: "எங்கள் முகநூல் பக்கங்கள்", fb_sub: "முகநூலில் எங்கள் புதுப்பிப்புகளைப் பின்தொடருங்கள்.", fb_visit: "பக்கத்தைப் பாருங்கள்",
+      fb_title: "எங்கள் மற்ற முகநூல் பக்கங்கள்", fb_sub: "மேலும் புதுப்பிப்புகளுக்கு எங்கள் மற்ற பக்கங்களைப் பின்தொடருங்கள்.", fb_visit: "பக்கத்தைப் பாருங்கள்", social_label: "எங்களைப் பின்தொடருங்கள்",
       companySub: "ரிஒல் எஸ்டேட் (தனியார்) லிமிடெட்",
       nav_projects: "திட்டங்கள்", nav_services: "சேவைகள்",
       nav_team: "தொடர்பு கொள்க", nav_office: "எங்கள் அலுவலகம்",
