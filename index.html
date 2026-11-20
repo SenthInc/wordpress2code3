@@ -3,34 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jeyam Real Estate (Pvt) Ltd - land development, custom homes and property projects in Jaffna, Sri Lanka.">
+  <meta name="description" content="Jeyam Real Estate (Pvt) Ltd - land development, custom homes and property projects in Jaffna, Sri Lanka. / ஜெயம் ரியல் எஸ்டேட் - யாழ்ப்பாணத்தில் நில மேம்பாடு, தனிப்பயன் வீடுகள்.">
   <meta property="og:title" content="Jeyam Real Estate | Jaffna">
   <meta property="og:description" content="Land development, custom homes and property projects in Jaffna.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="images/hero.jpg">
   <title>Jeyam Real Estate | Jaffna</title>
   <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
   <header class="site-header" id="siteHeader">
     <div class="container nav">
       <a href="#top" class="logo" aria-label="Jeyam Real Estate home">
-        <img class="logo-img" src="images/logo.jpg" alt="Jeyam Real Estate (Pvt) Ltd logo" width="52" height="52">
-        <span>Jeyam <small>Real Estate (Pvt) Ltd</small></span>
+        <img class="logo-img" src="images/logo.jpg" alt="" width="52" height="52">
+        <span>Jeyam <small data-i18n="companySub">Real Estate (Pvt) Ltd</small></span>
       </a>
-      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-right">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">தமிழ்</button>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
       <nav id="mainNav" class="main-nav">
-        <a href="#portfolio">Projects</a>
-        <a href="#services">Services</a>
-        <a href="#office">Our office</a>
-        <a href="#about">About</a>
-        <a href="#location">Visit us</a>
-        <a href="#contact">Contact</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#team" data-i18n="nav_team">Contact us</a>
+        <a href="#office" data-i18n="nav_office">Our office</a>
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#faq" data-i18n="nav_faq">FAQ</a>
+        <a href="#visit" data-i18n="nav_visit">Visit us</a>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">Dark mode</button>
       </nav>
     </div>
@@ -40,12 +47,41 @@
     <!-- HERO -->
     <section class="hero" id="top">
       <div class="container hero-inner">
-        <p class="eyebrow">Jaffna, Sri Lanka &middot; Since 2019</p>
-        <h1>Building and developing property in Jaffna</h1>
-        <p class="lead">Land development, custom homes and property projects across Jaffna and surrounding areas.</p>
+        <p class="eyebrow" data-i18n="hero_eyebrow">Jaffna, Sri Lanka &middot; Since 2019</p>
+        <h1 data-i18n="hero_title">Building and developing property in Jaffna</h1>
+        <p class="lead" data-i18n="hero_lead">Land development, custom homes and property projects across Jaffna and surrounding areas.</p>
         <div class="hero-actions">
-          <a href="#portfolio" class="btn btn-primary">View our projects</a>
-          <a id="heroWhatsApp" href="#" class="btn btn-ghost" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          <a href="#projects" class="btn btn-primary" data-i18n="hero_btn_projects">View our projects</a>
+          <a id="heroWhatsApp" href="#" class="btn btn-ghost" target="_blank" rel="noopener" data-i18n="hero_btn_wa">Chat on WhatsApp</a>
+        </div>
+
+        <!-- Social links, in priority order -->
+        <div class="social-row" aria-label="Social media">
+          <a class="social-chip s-youtube" href="https://youtube.com/@jeyamrealestate-jre" target="_blank" rel="noopener" style="--d:0ms"><span class="dot"></span>YouTube</a>
+          <a class="social-chip s-facebook" href="https://www.facebook.com/share/1CKNyyzDMh/" target="_blank" rel="noopener" style="--d:120ms"><span class="dot"></span>Facebook</a>
+          <a class="social-chip s-tiktok" href="https://www.tiktok.com/@jeyamrealestate" target="_blank" rel="noopener" style="--d:240ms"><span class="dot"></span>TikTok</a>
+          <a class="social-chip s-instagram" href="https://www.instagram.com/jeyamrealestate" target="_blank" rel="noopener" style="--d:360ms"><span class="dot"></span>Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL STRIP: phones with names -->
+    <section class="call-strip" aria-labelledby="callTitle">
+      <div class="container">
+        <h2 class="visually-title" id="callTitle" data-i18n="call_title">Call us directly</h2>
+        <div class="call-grid">
+          <a class="call-card" href="tel:+94778051655">
+            <span class="call-name" data-i18n="person_jeyam">Jeyam</span>
+            <span class="call-num">077 80 51 655</span>
+          </a>
+          <a class="call-card" href="tel:+94778147389">
+            <span class="call-name" data-i18n="person_siva">Siva</span>
+            <span class="call-num">077 81 47 389</span>
+          </a>
+          <a class="call-card" href="tel:+94779865457">
+            <span class="call-name" data-i18n="person_satheesh">Satheesh</span>
+            <span class="call-num">077 98 65 457</span>
+          </a>
         </div>
       </div>
     </section>
@@ -53,28 +89,27 @@
     <!-- STATS -->
     <section class="stats" aria-label="Highlights">
       <div class="container stats-grid">
-        <div class="stat"><strong data-count="2019">0</strong><span>Established</span></div>
-        <div class="stat"><strong data-count="7">0</strong><span>Days a week open</span></div>
-        <div class="stat"><strong data-count="3">0</strong><span>Core services</span></div>
-        <div class="stat"><strong>Jaffna</strong><span>Local expertise</span></div>
+        <div class="stat"><strong data-count="2019">0</strong><span data-i18n="stat_est">Established</span></div>
+        <div class="stat"><strong data-count="7">0</strong><span data-i18n="stat_days">Days a week open</span></div>
+        <div class="stat"><strong data-count="3">0</strong><span data-i18n="stat_services">Core services</span></div>
+        <div class="stat"><strong data-i18n="stat_local_val">Jaffna</strong><span data-i18n="stat_local">Local expertise</span></div>
       </div>
     </section>
 
     <!-- BANNER -->
     <section class="banner" aria-label="Jeyam Real Estate banner">
       <div class="container">
-        <img src="images/banner.jpg" alt="Jeyam Real Estate banner with the address 151/4 Raja Street, Jaffna and phone numbers 077 81 47 389 and 077 98 65 457" loading="lazy" width="850" height="512">
+        <img src="images/banner.jpg" alt="Jeyam Real Estate banner with address 151/4 Raja Street, Jaffna and phone numbers" loading="lazy" width="850" height="512">
       </div>
     </section>
 
-    <!-- PORTFOLIO -->
-    <section class="section" id="portfolio">
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
       <div class="container">
         <div class="section-head">
-          <h2>Our projects</h2>
-          <p>Photos from our land development and project sites in Jaffna.</p>
+          <h2 data-i18n="projects_title">Our projects</h2>
+          <p data-i18n="projects_sub">Photos from our land development and project sites in Jaffna.</p>
         </div>
-
         <div class="gallery" id="projectGallery"></div>
       </div>
     </section>
@@ -83,24 +118,79 @@
     <section class="section alt" id="services">
       <div class="container">
         <div class="section-head">
-          <h2>What we do</h2>
-          <p>From first plot to finished home.</p>
+          <h2 data-i18n="services_title">What we do</h2>
+          <p data-i18n="services_sub">From first plot to finished home.</p>
         </div>
         <div class="service-grid">
           <article class="service-card">
             <div class="icon" aria-hidden="true">&#127757;</div>
-            <h3>Land development</h3>
-            <p>Planning and developing land projects across Jaffna and nearby areas.</p>
+            <h3 data-i18n="svc1_t">Land development</h3>
+            <p data-i18n="svc1_d">Planning and developing land projects across Jaffna and nearby areas.</p>
           </article>
           <article class="service-card">
             <div class="icon" aria-hidden="true">&#127968;</div>
-            <h3>Custom home construction</h3>
-            <p>From plan to handover. Build the home you want on land you choose.</p>
+            <h3 data-i18n="svc2_t">Custom home construction</h3>
+            <p data-i18n="svc2_d">From plan to handover. Build the home you want on land you choose.</p>
           </article>
           <article class="service-card">
             <div class="icon" aria-hidden="true">&#127978;</div>
-            <h3>Commercial property</h3>
-            <p>Shops, offices and showrooms designed for local businesses.</p>
+            <h3 data-i18n="svc3_t">Commercial property</h3>
+            <p data-i18n="svc3_d">Shops, offices and showrooms designed for local businesses.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="process_title">How it works</h2>
+          <p data-i18n="process_sub">Four simple steps from your first call to handover.</p>
+        </div>
+        <ol class="steps">
+          <li class="step"><span class="step-no">1</span><h3 data-i18n="step1_t">Talk to us</h3><p data-i18n="step1_d">Call or WhatsApp any member of our team.</p></li>
+          <li class="step"><span class="step-no">2</span><h3 data-i18n="step2_t">Site visit and plan</h3><p data-i18n="step2_d">We look at the land and agree on a plan together.</p></li>
+          <li class="step"><span class="step-no">3</span><h3 data-i18n="step3_t">Build and develop</h3><p data-i18n="step3_d">We carry out the work with clear updates along the way.</p></li>
+          <li class="step"><span class="step-no">4</span><h3 data-i18n="step4_t">Handover</h3><p data-i18n="step4_d">You receive the finished project, ready to use.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section alt" id="team">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="team_title">Talk to our team</h2>
+          <p data-i18n="team_sub">Choose the person you would like to speak with.</p>
+        </div>
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="avatar" aria-hidden="true">J</div>
+            <h3 data-i18n="person_jeyam">Jeyam</h3>
+            <p class="team-num">077 80 51 655</p>
+            <div class="team-actions">
+              <a class="btn btn-primary" href="tel:+94778051655" data-i18n="btn_call">Call</a>
+              <a class="btn btn-wa" href="#" data-wa="94778051655" target="_blank" rel="noopener" data-i18n="btn_wa_short">WhatsApp</a>
+            </div>
+          </article>
+          <article class="team-card">
+            <div class="avatar" aria-hidden="true">S</div>
+            <h3 data-i18n="person_siva">Siva</h3>
+            <p class="team-num">077 81 47 389</p>
+            <div class="team-actions">
+              <a class="btn btn-primary" href="tel:+94778147389" data-i18n="btn_call">Call</a>
+              <a class="btn btn-wa" href="#" data-wa="94778147389" target="_blank" rel="noopener" data-i18n="btn_wa_short">WhatsApp</a>
+            </div>
+          </article>
+          <article class="team-card">
+            <div class="avatar" aria-hidden="true">S</div>
+            <h3 data-i18n="person_satheesh">Satheesh</h3>
+            <p class="team-num">077 98 65 457</p>
+            <div class="team-actions">
+              <a class="btn btn-primary" href="tel:+94779865457" data-i18n="btn_call">Call</a>
+              <a class="btn btn-wa" href="#" data-wa="94779865457" target="_blank" rel="noopener" data-i18n="btn_wa_short">WhatsApp</a>
+            </div>
           </article>
         </div>
       </div>
@@ -110,8 +200,8 @@
     <section class="section" id="office">
       <div class="container">
         <div class="section-head">
-          <h2>Our office</h2>
-          <p>Visit us at Raja Street, Jaffna.</p>
+          <h2 data-i18n="office_title">Our office</h2>
+          <p data-i18n="office_sub">Visit us at Raja Street, Jaffna.</p>
         </div>
         <div class="gallery gallery-office" id="officeGallery"></div>
       </div>
@@ -121,32 +211,59 @@
     <section class="section alt" id="about">
       <div class="container about-grid">
         <div>
-          <h2>About Jeyam Real Estate</h2>
-          <p>Jeyam Real Estate (Pvt) Ltd has been working in Jaffna since 2019, with projects in land development, custom home construction and commercial property.</p>
-          <p>We keep communication clear and the process straightforward, from the first meeting to the final handover.</p>
+          <h2 data-i18n="about_title">About Jeyam Real Estate (Pvt) Ltd</h2>
+          <p data-i18n="about_p1">Jeyam Real Estate (Pvt) Ltd has been working in Jaffna since 2019, with projects in land development, custom home construction and commercial property.</p>
+          <p data-i18n="about_p2">We keep communication clear and the process straightforward, from the first meeting to the final handover.</p>
           <ul class="checklist">
-            <li>Local knowledge of Jaffna</li>
-            <li>Clear planning and honest timelines</li>
-            <li>Available 7 days a week</li>
+            <li data-i18n="about_li1">Local knowledge of Jaffna</li>
+            <li data-i18n="about_li2">Clear planning and honest timelines</li>
+            <li data-i18n="about_li3">Available 7 days a week</li>
           </ul>
         </div>
         <div class="about-card">
-          <h3>Quick facts</h3>
+          <h3 data-i18n="facts_title">Quick facts</h3>
           <dl>
-            <dt>Location</dt><dd>151/4 Raja St, Jaffna 40170</dd>
-            <dt>Hours</dt><dd>Mon &ndash; Sun, 8:00 AM &ndash; 6:00 PM</dd>
-            <dt>Website</dt><dd><a href="https://jeyam.lk">jeyam.lk</a></dd>
+            <dt data-i18n="facts_loc">Location</dt><dd data-i18n="facts_loc_v">151/4 Raja St, Jaffna 40170</dd>
+            <dt data-i18n="facts_hours">Hours</dt><dd data-i18n="facts_hours_v">Mon &ndash; Sun, 8:00 AM &ndash; 6:00 PM</dd>
+            <dt data-i18n="facts_web">Website</dt><dd><a href="https://jeyam.lk">jeyam.lk</a></dd>
           </dl>
         </div>
       </div>
     </section>
 
-    <!-- LOCATION -->
-    <section class="section" id="location">
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <div class="section-head">
+          <h2 data-i18n="faq_title">Frequently asked questions</h2>
+        </div>
+        <div class="faq" id="faqList">
+          <details>
+            <summary data-i18n="faq1_q">Can you build on land I already own?</summary>
+            <p data-i18n="faq1_a">Yes. Contact us with your land details and we will advise on the next steps.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq2_q">Where do you work?</summary>
+            <p data-i18n="faq2_a">Jaffna and the surrounding areas.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq3_q">What are your office hours?</summary>
+            <p data-i18n="faq3_a">Monday to Sunday, 8:00 AM to 6:00 PM.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq4_q">How do I start?</summary>
+            <p data-i18n="faq4_a">Call or WhatsApp any member of our team, or send us a message below.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="section alt" id="visit">
       <div class="container">
         <div class="section-head">
-          <h2>Visit us</h2>
-          <p>151/4 Raja St, Jaffna 40170, Sri Lanka</p>
+          <h2 data-i18n="visit_title">Visit us</h2>
+          <p>151/4 Raja St, Jaffna 40170</p>
         </div>
         <div class="map-wrap">
           <iframe
@@ -155,60 +272,61 @@
             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="directions">
-          <a class="btn btn-primary" id="directionsLink" href="https://www.google.com/maps/search/?api=1&amp;query=Jeyam+Real+Estate+Jaffna" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Jeyam+Real+Estate+Jaffna" target="_blank" rel="noopener" data-i18n="directions">Get directions</a>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="section alt" id="contact">
+    <section class="section" id="contact">
       <div class="container contact-grid">
         <div>
-          <h2>Get in touch</h2>
-          <p>Ask about a project, or tell us what you have in mind.</p>
+          <h2 data-i18n="contact_title">Get in touch</h2>
+          <p data-i18n="contact_sub">Ask about a project, or tell us what you have in mind.</p>
           <ul class="contact-list">
-            <li><span class="label">Phone / WhatsApp</span>
-              <a id="phoneLink" href="tel:+94778147389">077 81 47 389</a>
-              <span class="sep">/</span>
-              <a id="phoneLink2" href="tel:+94779865457">077 98 65 457</a>
+            <li><span class="label" data-i18n="label_phone">Phone / WhatsApp</span>
+              <a href="tel:+94778051655">077 80 51 655</a> <span class="sep">/</span>
+              <a href="tel:+94778147389">077 81 47 389</a> <span class="sep">/</span>
+              <a href="tel:+94779865457">077 98 65 457</a>
             </li>
-            <li><span class="label">Address</span> 151/4 Raja St, Jaffna 40170</li>
-            <li><span class="label">Hours</span> Mon &ndash; Sun, 8:00 AM &ndash; 6:00 PM</li>
+            <li><span class="label" data-i18n="facts_loc">Location</span> <span data-i18n="facts_loc_v">151/4 Raja St, Jaffna 40170</span></li>
+            <li><span class="label" data-i18n="facts_hours">Hours</span> <span data-i18n="facts_hours_v">Mon &ndash; Sun, 8:00 AM &ndash; 6:00 PM</span></li>
           </ul>
 
-          <div class="social" aria-label="Social media">
-            <a href="https://www.facebook.com/p/Jeyam-Real-Estate-100046658263773/" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
-            <a href="https://www.tiktok.com/@jeyamrealestate" target="_blank" rel="noopener" aria-label="TikTok">TikTok</a>
-            <a id="waSocial" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+          <div class="social-row social-row-left" aria-label="Social media">
+            <a class="social-chip s-youtube" href="https://youtube.com/@jeyamrealestate-jre" target="_blank" rel="noopener"><span class="dot"></span>YouTube</a>
+            <a class="social-chip s-facebook" href="https://www.facebook.com/share/1CKNyyzDMh/" target="_blank" rel="noopener"><span class="dot"></span>Facebook</a>
+            <a class="social-chip s-tiktok" href="https://www.tiktok.com/@jeyamrealestate" target="_blank" rel="noopener"><span class="dot"></span>TikTok</a>
+            <a class="social-chip s-instagram" href="https://www.instagram.com/jeyamrealestate" target="_blank" rel="noopener"><span class="dot"></span>Instagram</a>
           </div>
         </div>
 
         <form class="contact-form" id="contactForm" novalidate>
           <div class="field">
-            <label for="cName">Full name</label>
+            <label for="cName" data-i18n="form_name">Full name</label>
             <input id="cName" name="name" type="text" autocomplete="name" required>
             <p class="error" data-error-for="cName"></p>
           </div>
           <div class="field">
-            <label for="cPhone">Phone / WhatsApp</label>
+            <label for="cPhone" data-i18n="form_phone">Phone / WhatsApp</label>
             <input id="cPhone" name="phone" type="tel" autocomplete="tel" placeholder="+94 ..." required>
             <p class="error" data-error-for="cPhone"></p>
           </div>
           <div class="field">
-            <label for="cInterest">I am interested in</label>
+            <label for="cInterest" data-i18n="form_interest">I am interested in</label>
             <select id="cInterest" name="interest">
-              <option>Land development</option>
-              <option>Custom home construction</option>
-              <option>Commercial property</option>
-              <option>Other</option>
+              <option value="Land development" data-i18n="svc1_t">Land development</option>
+              <option value="Custom home construction" data-i18n="svc2_t">Custom home construction</option>
+              <option value="Commercial property" data-i18n="svc3_t">Commercial property</option>
+              <option value="Other" data-i18n="form_other">Other</option>
             </select>
           </div>
           <div class="field">
-            <label for="cMessage">Message</label>
+            <label for="cMessage" data-i18n="form_message">Message</label>
             <textarea id="cMessage" name="message" rows="4" required></textarea>
             <p class="error" data-error-for="cMessage"></p>
           </div>
-          <button type="submit" class="btn btn-primary btn-block">Send message</button>
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="form_send">Send message</button>
           <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
         </form>
       </div>
@@ -222,19 +340,19 @@
       <img id="modalImg" class="modal-img" src="" alt="">
       <div class="modal-body">
         <p id="modalCaption"></p>
-        <a class="btn btn-primary btn-block" id="modalWhatsApp" href="#" target="_blank" rel="noopener">Ask about our projects</a>
+        <a class="btn btn-primary btn-block" id="modalWhatsApp" href="#" target="_blank" rel="noopener" data-i18n="modal_btn">Ask about our projects</a>
       </div>
     </div>
   </div>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> Jeyam Real Estate (Pvt) Ltd, Jaffna. All rights reserved.</p>
-      <p><a href="#top">Back to top</a></p>
+      <p><span data-i18n="footer_rights">Jeyam Real Estate (Pvt) Ltd, Jaffna. All rights reserved.</span> &copy; <span id="year"></span></p>
+      <p><a href="#top" data-i18n="back_top">Back to top</a></p>
     </div>
   </footer>
 
-  <a class="whatsapp-float" id="floatWhatsApp" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+  <a class="whatsapp-float" id="floatWhatsApp" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
 
   <script src="script.js"></script>
 </body>
